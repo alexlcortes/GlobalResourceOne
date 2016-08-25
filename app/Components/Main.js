@@ -1,4 +1,5 @@
 var React = require('react');
+var ReactDOM = require('react-dom');
 
 // not sure how use these other Components yet
 // var Forms = require('./Children/Form');
@@ -16,9 +17,9 @@ var Main = React.createClass({
 		console.log("Are you out there?")
 		var task;
 		if (coinFlip == true) {
-			task = "heads"
+			task = "An optimist stays up until midnight to see the new year in."
 		} else {
-			task = "tails"
+			task = "A pessimist stays up to make sure the ild year leaves."
 		}
 
 		return (
@@ -29,7 +30,8 @@ var Main = React.createClass({
 
 					<div className="jumbotron">
 
-						<h1 className="text-center">Global Resource One Comming SOON!</h1>
+						<h1 className="text-center">Global Resource One</h1>
+						<p className="text-center">"{task}"</p>
 
 					</div>
 
