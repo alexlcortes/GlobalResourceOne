@@ -21434,7 +21434,7 @@
 			if (coinFlip == true) {
 				task = "An optimist stays up until midnight to see the new year in.";
 			} else {
-				task = "A pessimist stays up to make sure the ild year leaves.";
+				task = "A pessimist stays up to make sure the old year leaves.";
 			}
 
 			return React.createElement(
@@ -21445,10 +21445,10 @@
 					{ className: 'row' },
 					React.createElement(
 						'div',
-						{ className: 'jumbotron' },
+						{ className: 'landingDiv' },
 						React.createElement(
 							'h1',
-							{ className: 'text-center' },
+							{ className: 'text-center mainTitle' },
 							'Global Resource One'
 						),
 						React.createElement(

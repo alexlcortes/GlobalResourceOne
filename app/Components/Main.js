@@ -19,7 +19,7 @@ var Main = React.createClass({
 		if (coinFlip == true) {
 			task = "An optimist stays up until midnight to see the new year in."
 		} else {
-			task = "A pessimist stays up to make sure the ild year leaves."
+			task = "A pessimist stays up to make sure the old year leaves."
 		}
 
 		return (
@@ -28,9 +28,9 @@ var Main = React.createClass({
 
 				<div className="row">
 
-					<div className="jumbotron">
+					<div className="landingDiv">
 
-						<h1 className="text-center">Global Resource One</h1>
+						<h1 className="text-center mainTitle">Global Resource One</h1>
 						<p className="text-center">"{task}"</p>
 
 					</div>
