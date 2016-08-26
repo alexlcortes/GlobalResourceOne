@@ -14,7 +14,7 @@ var Main = React.createClass({
 
 	render: function () {
 
-		console.log("Are you out there?")
+		// console.log("Are you out there?")
 		var task;
 		if (coinFlip == true) {
 			task = "An optimist stays up until midnight to see the new year in."
@@ -24,15 +24,21 @@ var Main = React.createClass({
 
 		return (
 
-			<div className="container">
+			<div className="container-fluid">
+
+				<nav className="navbar navbar-fixed-top">GR1</nav>
 
 				<div className="row">
-
 					<div className="landingDiv">
-
 						<h1 className="text-center mainTitle">Global Resource One</h1>
-						<p className="text-center">"{task}"</p>
+						<p className="text-center taskTitle">"{task}"</p>
+					</div>
+				</div>
 
+				<div className="row">
+					<div className="startButtons">
+						<button type="button" className="btn signUp">Sign Up</button>
+						<button type="button" className="btn signIn">Sign In</button>
 					</div>
 
 				</div>

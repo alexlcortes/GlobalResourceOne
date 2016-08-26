@@ -21429,7 +21429,7 @@
 
 		render: function render() {
 
-			console.log("Are you out there?");
+			// console.log("Are you out there?")
 			var task;
 			if (coinFlip == true) {
 				task = "An optimist stays up until midnight to see the new year in.";
@@ -21439,7 +21439,12 @@
 
 			return React.createElement(
 				'div',
-				{ className: 'container' },
+				{ className: 'container-fluid' },
+				React.createElement(
+					'nav',
+					{ className: 'navbar navbar-fixed-top' },
+					'GR1'
+				),
 				React.createElement(
 					'div',
 					{ className: 'row' },
@@ -21453,10 +21458,28 @@
 						),
 						React.createElement(
 							'p',
-							{ className: 'text-center' },
+							{ className: 'text-center taskTitle' },
 							'"',
 							task,
 							'"'
+						)
+					)
+				),
+				React.createElement(
+					'div',
+					{ className: 'row' },
+					React.createElement(
+						'div',
+						{ className: 'startButtons' },
+						React.createElement(
+							'button',
+							{ type: 'button', className: 'btn signUp' },
+							'Sign Up'
+						),
+						React.createElement(
+							'button',
+							{ type: 'button', className: 'btn signIn' },
+							'Sign In'
 						)
 					)
 				)

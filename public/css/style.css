@@ -1,4 +1,40 @@
-.container .row .landingDiv .mainTitle {
-  background-color: #2F8189; }
+@import url(https://fonts.googleapis.com/css?family=Baloo+Paaji|Oswald|Raleway);
+.container-fluid {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/neurons.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 460px; }
+
+.navbar {
+  color: #F2F2F2;
+  font-family: "Oswald", serif; }
+
+.landingDiv .taskTitle {
+  color: #F2F2F2;
+  font-family: "Oswald", serif;
+  font-size: 200%; }
+.landingDiv .mainTitle {
+  color: #F2F2F2;
+  font-family: "Oswald", serif;
+  font-size: 500%; }
+
+.startButtons {
+  margin: auto;
+  width: 200px; }
+  .startButtons .signIn {
+    margin-left: 15px;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    color: #F2F2F2; }
+  .startButtons .signUp {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    color: #F2F2F2; }
 
 /*# sourceMappingURL=style.css.map */

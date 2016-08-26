@@ -1,14 +1,62 @@
-$tc: #2F8189;
+//google fonts
+@import url(https://fonts.googleapis.com/css?family=Baloo+Paaji|Oswald|Raleway);
+
+//basic test variables
+$tc: #566683;
+$tcc: #F2F2F2;
+
+//font variables
+$raleway: 'Raleway', serif;
+$baloo-paaji: 'Baloo Paaji', serif;
+$oswald: 'Oswald', serif;
 
 
-.container {
-	.row {
-		.landingDiv {
-			.mainTitle {
-				background-color: $tc;
-			}
-		}
+.container-fluid {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/neurons.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 460px;
+}
+
+.navbar {
+	color: $tcc;
+	font-family: $oswald;
+}
+
+.landingDiv {
+	.taskTitle {
+		color: $tcc;
+		font-family: $oswald;
+		font-size: 200%;
+	}
+	.mainTitle {
+		color: $tcc;
+		font-family: $oswald;
+		font-size: 500%;
 	}
 }
+
+.startButtons {
+	margin: auto;
+	width: 200px;
+	.signIn {
+		margin-left: 15px;
+		background-color: Transparent;
+        background-repeat:no-repeat;
+        border: none;
+        cursor:pointer;
+        overflow: hidden;
+        color: $tcc;
+	}
+	.signUp {
+		background-color: Transparent;
+        background-repeat:no-repeat;
+        border: none;
+        cursor:pointer;
+        overflow: hidden;
+        color: $tcc;
+	}
+}
+
 
 
