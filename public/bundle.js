@@ -53,6 +53,7 @@
 	var Main = __webpack_require__(172);
 
 	ReactDOM.render(React.createElement(Main, null), document.getElementById('app'));
+	s;
 
 /***/ },
 /* 1 */
@@ -21418,6 +21419,7 @@
 	// var Forms = require('./Children/Form');
 	// var Results = require('./Children/Results');
 	// var helpers = require('./utils/helpers.js');
+	// var Main2 = require('./children/Main2');
 
 	// maths for coin flip
 	var coinFlip = Math.random() < 0.5;
@@ -21441,45 +21443,139 @@
 				'div',
 				{ className: 'container-fluid' },
 				React.createElement(
-					'nav',
-					{ className: 'navbar navbar-fixed-top' },
-					'GR1'
-				),
-				React.createElement(
 					'div',
-					{ className: 'row' },
+					{ className: 'firstSection' },
+					React.createElement(
+						'nav',
+						{ className: 'navbar navbar-fixed-top' },
+						React.createElement(
+							'div',
+							{ className: 'btn-group' },
+							React.createElement(
+								'button',
+								{ type: 'button', className: 'btn dropdown-toggle', 'data-toggle': 'dropdown', 'aria-haspopup': 'true', 'aria-expanded': 'false' },
+								'GR1 ',
+								React.createElement('span', { 'class': 'caret' })
+							),
+							React.createElement(
+								'ul',
+								{ 'class': 'dropdown-menu' },
+								React.createElement(
+									'li',
+									null,
+									React.createElement(
+										'a',
+										{ href: '#' },
+										'Action'
+									)
+								),
+								React.createElement(
+									'li',
+									null,
+									React.createElement(
+										'a',
+										{ href: '#' },
+										'Another action'
+									)
+								),
+								React.createElement(
+									'li',
+									null,
+									React.createElement(
+										'a',
+										{ href: '#' },
+										'Something else here'
+									)
+								)
+							)
+						)
+					),
 					React.createElement(
 						'div',
-						{ className: 'landingDiv' },
+						{ className: 'row' },
 						React.createElement(
-							'h1',
-							{ className: 'text-center mainTitle' },
-							'Global Resource One'
-						),
+							'div',
+							{ className: 'landingDiv' },
+							React.createElement(
+								'h1',
+								{ className: 'text-center mainTitle' },
+								'Global Resource One'
+							),
+							React.createElement(
+								'p',
+								{ className: 'text-center taskTitle' },
+								'"',
+								task,
+								'"'
+							)
+						)
+					),
+					React.createElement(
+						'div',
+						{ className: 'row' },
 						React.createElement(
-							'p',
-							{ className: 'text-center taskTitle' },
-							'"',
-							task,
-							'"'
+							'div',
+							{ className: 'startButtons' },
+							React.createElement(
+								'button',
+								{ type: 'button', className: 'btn signUp' },
+								'Sign Up'
+							),
+							React.createElement(
+								'button',
+								{ type: 'button', className: 'btn signIn' },
+								'Sign In'
+							)
 						)
 					)
 				),
 				React.createElement(
 					'div',
-					{ className: 'row' },
+					{ className: 'secondSection' },
 					React.createElement(
 						'div',
-						{ className: 'startButtons' },
+						{ className: 'row' },
 						React.createElement(
-							'button',
-							{ type: 'button', className: 'btn signUp' },
-							'Sign Up'
+							'div',
+							{ className: 'venderSearch col-md-4' },
+							React.createElement(
+								'h3',
+								{ className: 'text-center' },
+								'Vender Search'
+							),
+							React.createElement(
+								'p',
+								{ className: 'text-center' },
+								'Vendors or contractors will appear in a clean and well maintained database for clients to find.'
+							)
 						),
 						React.createElement(
-							'button',
-							{ type: 'button', className: 'btn signIn' },
-							'Sign In'
+							'div',
+							{ className: 'Client Proposal col-md-4' },
+							React.createElement(
+								'h3',
+								{ className: 'text-center' },
+								'Client Proposal Request'
+							),
+							React.createElement(
+								'p',
+								{ className: 'text-center' },
+								'Clients will post job specific proposals for vendors to search and be able to answer and connect better with clients.'
+							)
+						),
+						React.createElement(
+							'div',
+							{ className: 'oneGlobal col-md-4' },
+							React.createElement(
+								'h3',
+								{ className: 'text-center' },
+								'One Global Database'
+							),
+							React.createElement(
+								'p',
+								{ className: 'text-center' },
+								'Bot vendor and clients will be found in one central global database accessable by creating an account with GR1.'
+							)
 						)
 					)
 				)

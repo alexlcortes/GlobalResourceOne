@@ -3,7 +3,7 @@
 
 //basic test variables
 $tc: #566683;
-$tcc: #F2F2F2;
+$tcc: #F3E9D2;
 
 //font variables
 $raleway: 'Raleway', serif;
@@ -11,11 +11,17 @@ $baloo-paaji: 'Baloo Paaji', serif;
 $oswald: 'Oswald', serif;
 
 
-.container-fluid {
+.firstSection {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/neurons.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding-bottom: 460px;
+	padding-bottom: 235px;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.secondSection {
+	font-family: $oswald;
 }
 
 .navbar {
@@ -24,6 +30,7 @@ $oswald: 'Oswald', serif;
 }
 
 .landingDiv {
+	padding-top: 200px;
 	.taskTitle {
 		color: $tcc;
 		font-family: $oswald;
