@@ -1,6 +1,8 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
+var Button = require('react-materialize').Button;
+
 
 
 // maths for coin flip
