@@ -1,49 +1,46 @@
-@import url(https://fonts.googleapis.com/css?family=Baloo+Paaji|Oswald|Raleway);
-.firstSection {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/neurons.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-bottom: 140px; }
+/*
+Error: Invalid CSS after "...g-bottom: 140px": expected "{", was ";"
+        on line 19 of C:\Users\Alejandro Cortes\Documents\bootcamp\finalProject\GlobalResourceOne\public\sass\style.scss
 
-.secondSection {
-  font-family: "Oswald", serif; }
+14: .container-fluid {
+15: 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/neurons.jpg');
+16: 	background-repeat: no-repeat;
+17: 	background-size: cover;
+18: <<<<<<< HEAD
+19: 	padding-bottom: 140px;
+20: }
+21: 
+22: .secondSection {
+23: 	font-family: $oswald;
+24: =======
 
-.header {
-  color: #F3E9D2;
-  font-family: "Oswald", serif; }
-  .header .brand-logo {
-    font-size: 75%;
-    color: #F3E9D2;
-    background-color: Transparent; }
-
-.landingDiv {
-  padding-top: 150px; }
-  .landingDiv .taskTitle {
-    color: #F3E9D2;
-    font-family: "Oswald", serif;
-    font-size: 200%; }
-  .landingDiv .mainTitle {
-    color: #F3E9D2;
-    font-family: "Oswald", serif;
-    font-size: 500%; }
-
-.startButtons {
-  margin: auto;
-  width: 250px; }
-  .startButtons .signIn {
-    margin-left: 15px;
-    background-color: Transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    color: #F3E9D2; }
-  .startButtons .signUp {
-    background-color: Transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    color: #F3E9D2; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+C:\Users\Alejandro Cortes\Documents\bootcamp\finalProject\GlobalResourceOne\public\sass\style.scss:19
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1165:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1101:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1096:in `tok!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:641:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:711:in `declaration_or_ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:661:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:653:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:642:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:635:in `ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:660:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:653:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:117:in `stylesheet'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:42:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:393:in `_to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:18:in `load'
+C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...g-bottom: 140px\": expected \"{\", was \";\"\A         on line 19 of C:\Users\Alejandro Cortes\Documents\bootcamp\finalProject\GlobalResourceOne\public\sass\style.scss\A \A 14: .container-fluid {\A 15: 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/neurons.jpg');\A 16: 	background-repeat: no-repeat;\A 17: 	background-size: cover;\A 18: <<<<<<< HEAD\A 19: 	padding-bottom: 140px;\A 20: }\A 21: \A 22: .secondSection {\A 23: 	font-family: $oswald;\A 24: ======="; }

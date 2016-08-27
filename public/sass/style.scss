@@ -3,7 +3,7 @@
 
 //basic test variables
 $tc: #566683;
-$tcc: #F3E9D2;
+$tcc: #F2F2F2;
 
 //font variables
 $raleway: 'Raleway', serif;
@@ -11,15 +11,19 @@ $baloo-paaji: 'Baloo Paaji', serif;
 $oswald: 'Oswald', serif;
 
 
-.firstSection {
+.container-fluid {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/neurons.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+<<<<<<< HEAD
 	padding-bottom: 140px;
 }
 
 .secondSection {
 	font-family: $oswald;
+=======
+	padding-bottom: 460px;
+>>>>>>> parent of f984e3d... added more to main.js. started a button dropdown  for the navbar.
 }
 
 .header {
@@ -33,7 +37,10 @@ $oswald: 'Oswald', serif;
 }
 
 .landingDiv {
+<<<<<<< HEAD
 	padding-top: 150px;
+=======
+>>>>>>> parent of f984e3d... added more to main.js. started a button dropdown  for the navbar.
 	.taskTitle {
 		color: $tcc;
 		font-family: $oswald;

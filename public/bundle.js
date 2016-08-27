@@ -53,7 +53,6 @@
 	var Main = __webpack_require__(172);
 
 	ReactDOM.render(React.createElement(Main, null), document.getElementById('app'));
-	s;
 
 /***/ },
 /* 1 */
@@ -21415,6 +21414,14 @@
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(34);
 
+<<<<<<< HEAD
+=======
+	// not sure how use these other Components yet
+	// var Forms = require('./Children/Form');
+	// var Results = require('./Children/Results');
+	// var helpers = require('./utils/helpers.js');
+
+>>>>>>> parent of f984e3d... added more to main.js. started a button dropdown  for the navbar.
 	// maths for coin flip
 	var coinFlip = Math.random() < 0.5;
 
@@ -21437,7 +21444,13 @@
 				'div',
 				{ className: 'container-fluid' },
 				React.createElement(
+					'nav',
+					{ className: 'navbar navbar-fixed-top' },
+					'GR1'
+				),
+				React.createElement(
 					'div',
+<<<<<<< HEAD
 					{ className: 'firstSection' },
 					React.createElement(
 						'div',
@@ -21448,10 +21461,14 @@
 							'GR1'
 						)
 					),
+=======
+					{ className: 'row' },
+>>>>>>> parent of f984e3d... added more to main.js. started a button dropdown  for the navbar.
 					React.createElement(
 						'div',
-						{ className: 'row' },
+						{ className: 'landingDiv' },
 						React.createElement(
+<<<<<<< HEAD
 							'div',
 							{ className: 'landingDiv' },
 							React.createElement(
@@ -21511,14 +21528,27 @@
 								{ className: 'signIn waves-effect waves-light btn modal-trigger' },
 								'signIn'
 							)
+=======
+							'h1',
+							{ className: 'text-center mainTitle' },
+							'Global Resource One'
+						),
+						React.createElement(
+							'p',
+							{ className: 'text-center taskTitle' },
+							'"',
+							task,
+							'"'
+>>>>>>> parent of f984e3d... added more to main.js. started a button dropdown  for the navbar.
 						)
 					)
 				),
 				React.createElement(
 					'div',
-					{ className: 'secondSection' },
+					{ className: 'row' },
 					React.createElement(
 						'div',
+<<<<<<< HEAD
 						{ className: 'row' },
 						React.createElement(
 							'div',
@@ -21561,6 +21591,18 @@
 								{ className: 'center-align' },
 								'Bot vendor and clients will be found in one central global database accessable by creating an account with GR1.'
 							)
+=======
+						{ className: 'startButtons' },
+						React.createElement(
+							'button',
+							{ type: 'button', className: 'btn signUp' },
+							'Sign Up'
+						),
+						React.createElement(
+							'button',
+							{ type: 'button', className: 'btn signIn' },
+							'Sign In'
+>>>>>>> parent of f984e3d... added more to main.js. started a button dropdown  for the navbar.
 						)
 					)
 				)

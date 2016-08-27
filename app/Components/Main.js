@@ -1,10 +1,6 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-var Button = require('react-materialize').Button;
-
-
-
 // maths for coin flip
 var coinFlip = Math.random() < 0.5;
 
@@ -24,44 +20,25 @@ var Main = React.createClass({
 		return (
 
 			<div className="container-fluid">
-				<div className="firstSection">
 
-					<div className="header">
-							<a className="brand-logo waves-effect waves-light btn">GR1</a>
+				<nav className="navbar navbar-fixed-top">GR1</nav>
+
+				<div className="row">
+					<div className="landingDiv">
+						<h1 className="text-center mainTitle">Global Resource One</h1>
+						<p className="text-center taskTitle">"{task}"</p>
 					</div>
+				</div>
 
-					<div className="row">
-						<div className="landingDiv">
-							<h1 className="center-align mainTitle">Global Resource One</h1>
-							<p className="center-align taskTitle">"{task}"</p>
-						</div>
+				<div className="row">
+					<div className="startButtons">
+						<button type="button" className="btn signUp">Sign Up</button>
+						<button type="button" className="btn signIn">Sign In</button>
 					</div>
-
-					<div className="row">
-
-						<div className="startButtons">
-
-  							<a className="signUp waves-effect waves-light btn modal-trigger" href="#modal1">signUp</a>
-
-  								<div id="modal1" className="modal">
-    								<div className="modal-content">
-      									<h4>Create Account</h4>
-      									<p>A form will go here</p>
-    								</div>
-    								<div className="modal-footer">
-      									<a href="#!" className=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-    								</div>
-  								</div>
-
-  							<a className="signIn waves-effect waves-light btn modal-trigger">signIn</a>
-
-						</div>
-
-					</div>
-
 				</div>
 
 				<div className="secondSection">
+
 					<div className="row">
 						<div className="venderSearch col s4">
 							<h5 className="center-align">Vender Search</h5>
@@ -74,16 +51,16 @@ var Main = React.createClass({
 						</div>
 
 						<div className="oneGlobal col s4">
-							<h5 className="center-align">One Global Database</h5>
-								<p className="center-align">Bot vendor and clients will be found in one central global database accessable by creating an account with GR1.</p>
+							<h5 className="text-center">One Global Database</h5>
+								<p className="text-center">Bot vendor and clients will be found in one central global database accessable by creating an account with GR1.</p>
 						</div>
 					</div>
 
 				</div>
+
 			</div>
 		)
 	}
 });
 
-// export Components not working...
 module.exports = Main;
