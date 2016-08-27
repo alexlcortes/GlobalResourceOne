@@ -3,19 +3,21 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/neurons.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 235px;
-  margin-left: -15px;
-  margin-right: -15px; }
+  padding-bottom: 140px; }
 
 .secondSection {
   font-family: "Oswald", serif; }
 
-.navbar {
+.header {
   color: #F3E9D2;
   font-family: "Oswald", serif; }
+  .header .brand-logo {
+    font-size: 75%;
+    color: #F3E9D2;
+    background-color: Transparent; }
 
 .landingDiv {
-  padding-top: 200px; }
+  padding-top: 150px; }
   .landingDiv .taskTitle {
     color: #F3E9D2;
     font-family: "Oswald", serif;
@@ -27,7 +29,7 @@
 
 .startButtons {
   margin: auto;
-  width: 200px; }
+  width: 250px; }
   .startButtons .signIn {
     margin-left: 15px;
     background-color: Transparent;
