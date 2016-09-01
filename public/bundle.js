@@ -21424,6 +21424,28 @@
 		displayName: 'Main',
 
 
+		componentDidMount: function componentDidMount() {
+
+			$(document).ready(function () {
+				console.log("Test");
+				var scroll_start = 0;
+				var startchange = $('.secondSection');
+				var offset = startchange.offset();
+
+				if (startchange.length) {
+					$(document).scroll(function () {
+						scroll_start = $(this).scrollTop();
+
+						if (scroll_start > offset.top) {
+							$('.nav-item').css('color', '#000000');
+						} else {
+							$('.nav-item').css('color', '#F2F2F2');
+						}
+					});
+				}
+			});
+		},
+
 		render: function render() {
 
 			// console.log("Are you out there?")
@@ -21442,28 +21464,28 @@
 					{ className: 'firstBack' },
 					React.createElement(
 						'nav',
-						{ className: 'navbar navbar-fixed-top' },
+						{ className: 'navbar navbar-fixed-top', role: 'navigation' },
 						React.createElement(
 							'ul',
-							null,
+							{ className: 'nav' },
 							React.createElement(
 								'li',
-								null,
+								{ className: 'nav-item' },
 								'GR1'
 							),
 							React.createElement(
 								'li',
-								null,
+								{ className: 'nav-item' },
 								'Search'
 							),
 							React.createElement(
 								'li',
-								null,
+								{ className: 'nav-item' },
 								'Proposal'
 							),
 							React.createElement(
 								'li',
-								null,
+								{ className: 'nav-item' },
 								'Profile'
 							)
 						)

@@ -9,6 +9,28 @@ var coinFlip = Math.random() < 0.5;
 // new main to show if flip is heads or tails while site is built...
 var Main = React.createClass({
 
+	componentDidMount: function () {
+
+		$(document).ready(function(){  
+			console.log("Test");     
+			var scroll_start = 0;
+			var startchange = $('.secondSection');
+			var offset = startchange.offset();
+			
+			if (startchange.length){
+					$(document).scroll(function() { 
+  					scroll_start = $(this).scrollTop();
+
+     			if(scroll_start > offset.top) {
+          				$('.nav-item').css('color', '#000000');
+      				} else {
+          				$('.nav-item').css('color', '#F2F2F2');
+       				}
+				});
+			}
+		});
+	},
+
 	render: function () {
 
 		// console.log("Are you out there?")
@@ -25,12 +47,12 @@ var Main = React.createClass({
 
 				<div className="firstBack">
 
-					<nav className="navbar navbar-fixed-top">
-						<ul>
-							<li>GR1</li>
-							<li>Search</li>
-							<li>Proposal</li>
-							<li>Profile</li>
+					<nav className="navbar navbar-fixed-top" role="navigation">
+						<ul className="nav">
+							<li className="nav-item">GR1</li>
+							<li className="nav-item">Search</li>
+							<li className="nav-item">Proposal</li>
+							<li className="nav-item">Profile</li>
 						</ul>
 					</nav>
 
