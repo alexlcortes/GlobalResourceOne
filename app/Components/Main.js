@@ -1,6 +1,8 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
+var Info = require('./Children/Info');
+
 // maths for coin flip
 var coinFlip = Math.random() < 0.5;
 
@@ -19,46 +21,42 @@ var Main = React.createClass({
 
 		return (
 
-			<div className="container-fluid">
+			<div className="container-fluid2">
 
-				<nav className="navbar navbar-fixed-top">GR1</nav>
+				<div className="firstBack">
 
-				<div className="row">
-					<div className="landingDiv">
-						<h1 className="text-center mainTitle">Global Resource One</h1>
-						<p className="text-center taskTitle">"{task}"</p>
-					</div>
-				</div>
-
-				<div className="row">
-					<div className="startButtons">
-						<button type="button" className="btn signUp">Sign Up</button>
-						<button type="button" className="btn signIn">Sign In</button>
-					</div>
-				</div>
-
-				<div className="secondSection">
+					<nav className="navbar navbar-fixed-top">
+						<ul>
+							<li>GR1</li>
+							<li>Search</li>
+							<li>Proposal</li>
+							<li>Profile</li>
+						</ul>
+					</nav>
 
 					<div className="row">
-						<div className="venderSearch col s4">
-							<h5 className="center-align">Vender Search</h5>
-								<p className="center-align">Vendors or contractors will appear in a clean and well maintained database for clients to find.</p>
+						<div className="landingDiv">
+							<h1 className="text-xs-center mainTitle">Global Resource One</h1>
+							<p className="text-xs-center taskTitle">"{task}"</p>
 						</div>
+					</div>
 
-						<div className="clientProposal col s4">
-							<h5 className="center-align">Client Proposal Request</h5>
-								<p className="center-align">Clients will post job specific proposals for vendors to search and be able to answer and connect better with clients.</p>
-						</div>
-
-						<div className="oneGlobal col s4">
-							<h5 className="text-center">One Global Database</h5>
-								<p className="text-center">Bot vendor and clients will be found in one central global database accessable by creating an account with GR1.</p>
+					<div className="row">
+						<div className="startButtons">
+							<button type="button" className="btn signUp">Sign Up</button>
+							<button type="button" className="btn signIn">Sign In</button>
 						</div>
 					</div>
 
 				</div>
 
+					<div className="info">
+						<Info />
+					</div>
+
 			</div>
+
+
 		)
 	}
 });

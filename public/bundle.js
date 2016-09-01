@@ -21414,14 +21414,8 @@
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(34);
 
-<<<<<<< HEAD
-=======
-	// not sure how use these other Components yet
-	// var Forms = require('./Children/Form');
-	// var Results = require('./Children/Results');
-	// var helpers = require('./utils/helpers.js');
+	var Info = __webpack_require__(173);
 
->>>>>>> parent of f984e3d... added more to main.js. started a button dropdown  for the navbar.
 	// maths for coin flip
 	var coinFlip = Math.random() < 0.5;
 
@@ -21442,43 +21436,52 @@
 
 			return React.createElement(
 				'div',
-				{ className: 'container-fluid' },
-				React.createElement(
-					'nav',
-					{ className: 'navbar navbar-fixed-top' },
-					'GR1'
-				),
+				{ className: 'container-fluid2' },
 				React.createElement(
 					'div',
-<<<<<<< HEAD
-					{ className: 'firstSection' },
+					{ className: 'firstBack' },
 					React.createElement(
-						'div',
-						{ className: 'header' },
+						'nav',
+						{ className: 'navbar navbar-fixed-top' },
 						React.createElement(
-							'a',
-							{ className: 'brand-logo waves-effect waves-light btn' },
-							'GR1'
+							'ul',
+							null,
+							React.createElement(
+								'li',
+								null,
+								'GR1'
+							),
+							React.createElement(
+								'li',
+								null,
+								'Search'
+							),
+							React.createElement(
+								'li',
+								null,
+								'Proposal'
+							),
+							React.createElement(
+								'li',
+								null,
+								'Profile'
+							)
 						)
 					),
-=======
-					{ className: 'row' },
->>>>>>> parent of f984e3d... added more to main.js. started a button dropdown  for the navbar.
 					React.createElement(
 						'div',
-						{ className: 'landingDiv' },
+						{ className: 'row' },
 						React.createElement(
-<<<<<<< HEAD
 							'div',
 							{ className: 'landingDiv' },
 							React.createElement(
 								'h1',
-								{ className: 'center-align mainTitle' },
+								{ className: 'text-xs-center mainTitle' },
 								'Global Resource One'
 							),
 							React.createElement(
 								'p',
-								{ className: 'center-align taskTitle' },
+								{ className: 'text-xs-center taskTitle' },
 								'"',
 								task,
 								'"'
@@ -21492,117 +21495,90 @@
 							'div',
 							{ className: 'startButtons' },
 							React.createElement(
-								'a',
-								{ className: 'signUp waves-effect waves-light btn modal-trigger', href: '#modal1' },
-								'signUp'
+								'button',
+								{ type: 'button', className: 'btn signUp' },
+								'Sign Up'
 							),
 							React.createElement(
-								'div',
-								{ id: 'modal1', className: 'modal' },
-								React.createElement(
-									'div',
-									{ className: 'modal-content' },
-									React.createElement(
-										'h4',
-										null,
-										'Create Account'
-									),
-									React.createElement(
-										'p',
-										null,
-										'A form will go here'
-									)
-								),
-								React.createElement(
-									'div',
-									{ className: 'modal-footer' },
-									React.createElement(
-										'a',
-										{ href: '#!', className: ' modal-action modal-close waves-effect waves-green btn-flat' },
-										'Agree'
-									)
-								)
-							),
-							React.createElement(
-								'a',
-								{ className: 'signIn waves-effect waves-light btn modal-trigger' },
-								'signIn'
+								'button',
+								{ type: 'button', className: 'btn signIn' },
+								'Sign In'
 							)
-=======
-							'h1',
-							{ className: 'text-center mainTitle' },
-							'Global Resource One'
-						),
-						React.createElement(
-							'p',
-							{ className: 'text-center taskTitle' },
-							'"',
-							task,
-							'"'
->>>>>>> parent of f984e3d... added more to main.js. started a button dropdown  for the navbar.
 						)
 					)
 				),
 				React.createElement(
 					'div',
+					{ className: 'info' },
+					React.createElement(Info, null)
+				)
+			);
+		}
+	});
+
+	module.exports = Main;
+
+/***/ },
+/* 173 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+	var ReactDOM = __webpack_require__(34);
+
+	var Info = React.createClass({
+		displayName: 'Info',
+
+
+		render: function render() {
+
+			return React.createElement(
+				'div',
+				{ className: 'secondSection' },
+				React.createElement(
+					'div',
 					{ className: 'row' },
 					React.createElement(
 						'div',
-<<<<<<< HEAD
-						{ className: 'row' },
+						{ className: 'venderSearch col-md-4' },
 						React.createElement(
-							'div',
-							{ className: 'venderSearch col s4' },
-							React.createElement(
-								'h5',
-								{ className: 'center-align' },
-								'Vender Search'
-							),
-							React.createElement(
-								'p',
-								{ className: 'center-align' },
-								'Vendors or contractors will appear in a clean and well maintained database for clients to find.'
-							)
+							'h5',
+							{ className: 'text-xs-center infoTitle' },
+							'Vender Search'
 						),
 						React.createElement(
-							'div',
-							{ className: 'clientProposal col s4' },
-							React.createElement(
-								'h5',
-								{ className: 'center-align' },
-								'Client Proposal Request'
-							),
-							React.createElement(
-								'p',
-								{ className: 'center-align' },
-								'Clients will post job specific proposals for vendors to search and be able to answer and connect better with clients.'
-							)
+							'p',
+							{ className: 'text-xs-center infoContent' },
+							'Vendors or contractors will appear in a clean and well maintained database for clients to find.'
+						)
+					),
+					React.createElement(
+						'div',
+						{ className: 'clientProposal col-md-4' },
+						React.createElement(
+							'h5',
+							{ className: 'text-xs-center infoTitle' },
+							'Client Proposal Request'
 						),
 						React.createElement(
-							'div',
-							{ className: 'oneGlobal col s4' },
-							React.createElement(
-								'h5',
-								{ className: 'center-align' },
-								'One Global Database'
-							),
-							React.createElement(
-								'p',
-								{ className: 'center-align' },
-								'Bot vendor and clients will be found in one central global database accessable by creating an account with GR1.'
-							)
-=======
-						{ className: 'startButtons' },
+							'p',
+							{ className: 'text-xs-center infoContent' },
+							'Clients will post job specific proposals for vendors to search and be able to answer and connect better with clients.'
+						)
+					),
+					React.createElement(
+						'div',
+						{ className: 'oneGlobal col-md-4' },
 						React.createElement(
-							'button',
-							{ type: 'button', className: 'btn signUp' },
-							'Sign Up'
+							'h5',
+							{ className: 'text-xs-center infoTitle' },
+							'One Global Database'
 						),
 						React.createElement(
-							'button',
-							{ type: 'button', className: 'btn signIn' },
-							'Sign In'
->>>>>>> parent of f984e3d... added more to main.js. started a button dropdown  for the navbar.
+							'p',
+							{ className: 'text-xs-center infoContent' },
+							'Bot vendor and clients will be found in one central global database accessable by creating an account with GR1.'
 						)
 					)
 				)
@@ -21610,8 +21586,7 @@
 		}
 	});
 
-	// export Components not working...
-	module.exports = Main;
+	module.exports = Info;
 
 /***/ }
 /******/ ]);

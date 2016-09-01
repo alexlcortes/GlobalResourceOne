@@ -4,6 +4,7 @@
 //basic test variables
 $tc: #566683;
 $tcc: #F2F2F2;
+$blk: #000000;
 
 //font variables
 $raleway: 'Raleway', serif;
@@ -11,22 +12,19 @@ $baloo-paaji: 'Baloo Paaji', serif;
 $oswald: 'Oswald', serif;
 
 
-.container-fluid {
+.firstBack {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/neurons.jpg');
 	background-repeat: no-repeat;
-	background-size: cover;
-<<<<<<< HEAD
-	padding-bottom: 140px;
+	padding-bottom: 200px;
 }
 
 .secondSection {
 	font-family: $oswald;
-=======
 	padding-bottom: 460px;
->>>>>>> parent of f984e3d... added more to main.js. started a button dropdown  for the navbar.
+	color: #F2F2F2;
 }
 
-.header {
+.navbar {
 	color: $tcc;
 	font-family: $oswald;
 	.brand-logo{
@@ -37,10 +35,7 @@ $oswald: 'Oswald', serif;
 }
 
 .landingDiv {
-<<<<<<< HEAD
 	padding-top: 150px;
-=======
->>>>>>> parent of f984e3d... added more to main.js. started a button dropdown  for the navbar.
 	.taskTitle {
 		color: $tcc;
 		font-family: $oswald;
@@ -74,6 +69,14 @@ $oswald: 'Oswald', serif;
         color: $tcc;
 	}
 }
+
+.infoTitle {
+	color: $blk;
+	}
+
+.infoContent {
+		color: $blk;
+	}
 
 
 
